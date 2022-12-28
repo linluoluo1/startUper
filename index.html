@@ -14,7 +14,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="pt-2">
-          <img src="img/logo.jpg" alt="logo" />
+          <img src="img/logo.png" alt="logo" />
         </div>
         <!-- Menu Items -->
         <div class="hidden md:flex space-x-12">
@@ -28,9 +28,33 @@
         <!-- Button -->
         <a
           href="#"
-          class="hidden md:block p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-veryPaleRed"
+          class="hidden md:block p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-darkGrayishBlue"
           >Get Started</a
         >
+
+        <!-- Hamburger menu -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-paleGray sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About us</a>
+          <a href="#">Community</a>
+          <a href="#">Careers</a>
+
+        </div>
       </div>
     </nav>
     <!-- Hero section -->
@@ -47,7 +71,7 @@
           >
             Bring everyone together to build better world!
           </h1>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm text-center text-black md:text-left">
             Lets develop new technologies and services to make the world more
             sustainable.
           </p>
@@ -55,7 +79,7 @@
           <div class="flex justify-center md:ustify-start">
             <a
               href="#"
-              class="p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-veryPaleRed"
+              class="p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-darkGrayishBlue"
               >Get Started</a
             >
           </div>
@@ -79,7 +103,7 @@
           <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
             What is different about StartUper?
           </h2>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm text-center text-black md:text-left">
             Know and predict what a customer needs through research. Build
             product marketing objectives and strategies. Create product lines
             and test ideas for market viability. Determine a product pricing
@@ -248,7 +272,7 @@
         <div class="my-16">
           <a
             href="#"
-            class="p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-veryPaleRed"
+            class="p-3 px-6 pt-2 bg-brightRed rounded-full baseline hover:bg-darkGrayishBlue"
             >Get Started</a
           >
         </div>
@@ -256,24 +280,108 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="CTA" class="bg-veryPaleRed">
+    <section id="CTA" class="bg-paleGray">
       <!-- Flex Container -->
       <div
         class="container flex flex-col items-center justify-between px-6 py-24 mx-auto spacy-y-12 md:py-12 md:flex-row md:space-y-0"
       >
         <h2
-          class="mb-6 text-5xl font-bold leading-tight text-center text-darkGrayishBlue md:text-4xl md:max-w-xl md:text-left"
+          class="mb-6 text-5xl font-bold leading-tight text-center text-black md:text-4xl md:max-w-xl md:text-left"
         >
-          Simplify today how you are going change tomorrow.
+          Simplify today how you are going to change tomorrow.
         </h2>
         <div>
           <a
             href="#"
-            class="p-3 px-6 pt-2 bg-white text-brightRed rounded-full baseline shadow-2xl hover:bg-darkGrayishBlue"
+            class="p-3 px-6 pt-2 bg-brightRed text-black rounded-full baseline shadow-2xl hover:bg-darkGrayishBlue"
             >Get Started</a
           >
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Flex-container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-black md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <img src="img/logo.png" class="h-8" alt="logo" />
+          </div>
+          <!-- Social container -->
+          <div class="flex justify-center space-x-4">
+            <a href="#">
+              <img src="img/facebook.png" class="h-8" alt="fb" />
+            </a>
+            <a href="#">
+              <img src="img/instagram.png" class="h-8" alt="inst" />
+            </a>
+            <a href="#">
+              <img src="img/linkedin.png" class="h-8" alt="lnkd" />
+            </a>
+          </div>
+        </div>
+        <!-- List container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Home</a
+            >
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Pricing</a
+            >
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >About</a
+            >
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Product</a
+            >
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Careers</a
+            >
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Community</a
+            >
+            <a href="#" class="text-darkGrayishBlue hover:text-brightRed"
+              >Privacy</a
+            >
+          </div>
+        </div>
+
+        <!-- Input container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="bg-darkGrayishBlue placeholder-black flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Updates in your inbox"
+              />
+              <button
+                class="px-6 py-2 text-black rounded-full bg-brightRed hover:bg-darkGrayishBlue focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-black md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
