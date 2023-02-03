@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 body {
-  background-image: url(../img/bg-2.jpg);
+  background-image: url(../img/bg-8.jfif);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 20px;
 }
 
 /* Hamburger menu */
@@ -19,37 +22,37 @@ body {
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 3px;
-    background-color: black;
-    transform: rotate(0);
-    transition: all 0.5s;
-    border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+  border-radius: 7px;
 }
 
-.hamburger-middle{
-    transform: translateY(7px);
+.hamburger-middle {
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 .open .hamburger-middle {
-display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }

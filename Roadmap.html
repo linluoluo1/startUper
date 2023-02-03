@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/roadmap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Roadmap</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!-- Navbar -->
+      <div class="bg-white">
+        <nav class="relative container text-black mx-auto p-6">
+          <!-- Flex container -->
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+              <img src="img/logo.png" alt="logo" />
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-12">
+              <a href="./index.html" class="hover:text-brightRed">Home</a>
+              <a href="#idea" class="hover:text-brightRed">Your Idea</a>
+              <a href="#plan" class="hover:text-brightRed">Your plan</a>
+              <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
+            </div>
+
+            <!-- Button -->
+            <a
+              href="#"
+              class="hidden md:block p-3 text-white px-6 pt-2 bg-darkGrayishBlue rounded-full baseline hover:bg-brightRed"
+              >Get Started</a
+            >
+
+            <!-- Hamburger menu -->
+            <button
+              id="menu-btn"
+              class="block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <!-- Mobile menu -->
+          <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-paleBlue sm:w-auto sm:self-center left-6 rounded-lg right-6 drop-shadow-md"
+            >
+              <a ref="./index.html" class="hover:text-brightRed">Home</a>
+              <a href="#idea" class="hover:text-brightRed">Your Idea</a>
+              <a href="#plan" class="hover:text-brightRed">Your Plan</a>
+              <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar end -->
+
+      <!-- Idea section -->
+      <section id="idea">
+        <div class="mx-auto my-6 flex justify-center relative">
+          <h1 class="text-4xl font-bold text-black">My project's Name</h1>
+          <span class="w-1 h-12 bg-black absolute top-10"></span>
+          <img
+            src="./img/dots.png"
+            alt="edit"
+            class="w-10 mx-4 hover:scale-125"
+            id="dots-btn"
+          />
+
+          <!-- small edit menu for duts btn -->
+          <!-- hidden by default -->
+          <div
+            class="bg-darkGrayishBlue absolute p-4 hidden rounded-lg"
+            id="edit-menu"
+          >
+            <h2>Change the name</h2>
+            <h2>Change the color</h2>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-14 flex justify-around">
+          <button
+            class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
+            id="project-btn"
+          >
+            I have a complete vision of it!
+          </button>
+          <button
+            class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
+            id="draft-btn"
+          >
+            I have some drafts!
+          </button>
+        </div>
+      </section>
+      <!-- Complited idea section -->
+      <section
+        class="bg-paleYellow flex px-8 flex-row justify-around"
+        id="project-sec"
+      >
+        <div>
+          <h4 class="py-4">
+            Please, describe your idea as detailed as possible.
+          </h4>
+          <textarea
+            name="mainIdea"
+            id="project-idea"
+            maxlength="1000"
+            class="idea-desc rounded-lg pb-4 flex justify-around"
+            spellcheck="true"
+            contenteditable="true"
+          ></textarea>
+        </div>
+
+        <div class="textarea-wr">
+          <h4>
+            Pleas, specify the most important ideas and value of your project.
+          </h4>
+          <input type="text" class="hover:bg-paleGray" id="idea-items-input" />
+          <button
+            class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4"
+            id="idea-items-btn"
+          >
+            Add
+          </button>
+          <div class="idea-it-area" id="idea-items-area"></div>
+        </div>
+      </section>
+      <!-- complited idea section ends -->
+
+      <!-- drafts section -->
+      <section class="bg-brightRed hidden" id="draft-sec">
+        <h1 class="w-50">drafts</h1>
+      </section>
+      <!-- drafts section ends -->
+
+      <!-- Idea section end -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  background-image: url(../img/bg-8.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 18px;
+}
+
+.section-visibility {
+  display: flex;
+}
+
+.btn-hide {
+  display: none;
+}
+
+.idea-desc {
+  width: 500px;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.idea-desc::-webkit-scrollbar {
+  display: none;
+}
+
+.edit-menu {
+  display: block;
+  right: 25%;
+  top: 50%;
+}
+
+.proj-name {
+  justify-content: space-around;
+}
+
+.textarea-wr {
+  max-width: 600px;
+}
+
+.idea-it-area {
+  max-width: inherit;
+}
