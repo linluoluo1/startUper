@@ -14,137 +14,272 @@
     <title>Roadmap</title>
   </head>
   <body>
-    <div class="body-wrapper">
-      <!-- Navbar -->
-      <div class="bg-white">
-        <nav class="relative container text-black mx-auto p-6">
-          <!-- Flex container -->
-          <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="pt-2">
-              <img src="img/logo.png" alt="logo" />
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden md:flex space-x-12">
-              <a href="./index.html" class="hover:text-brightRed">Home</a>
-              <a href="#idea" class="hover:text-brightRed">Your Idea</a>
-              <a href="#plan" class="hover:text-brightRed">Your plan</a>
-              <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
-            </div>
+    <!-- Navbar -->
+    <div class="bg-white">
+      <nav class="relative container text-black mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden md:flex space-x-12">
+            <a href="./index.html" class="hover:text-brightRed">Home</a>
+            <a href="#idea" class="hover:text-brightRed">Your Idea</a>
+            <a href="#plan" class="hover:text-brightRed">Your plan</a>
+            <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
+          </div>
 
-            <!-- Button -->
-            <a
-              href="#"
-              class="hidden md:block p-3 text-white px-6 pt-2 bg-darkGrayishBlue rounded-full baseline hover:bg-brightRed"
-              >Get Started</a
-            >
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden md:block p-3 text-white px-6 pt-2 bg-darkGrayishBlue rounded-full baseline hover:bg-brightRed"
+            >Get Started</a
+          >
 
-            <!-- Hamburger menu -->
+          <!-- Hamburger menu -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-paleBlue sm:w-auto sm:self-center left-6 rounded-lg right-6 drop-shadow-md"
+          >
+            <a ref="./index.html" class="hover:text-brightRed">Home</a>
+            <a href="#idea" class="hover:text-brightRed">Your Idea</a>
+            <a href="#plan" class="hover:text-brightRed">Your Plan</a>
+            <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- Idea section -->
+    <section id="idea">
+      <div class="mx-auto my-6 flex justify-center relative">
+        <h1 class="text-4xl font-bold text-black">My project's Name</h1>
+        <span
+          class="w-1 h-12 z-10 bg-black absolute top-10 hover:scale-110 hover:rounded-full hover:h-8 hover:w-8 hover:top-13 active:scale-100"
+          id="open-idea-sec-btn"
+        ></span>
+        <img
+          src="./img/dots.png"
+          alt="edit"
+          class="w-10 mx-4 hover:scale-125"
+          id="dots-btn"
+        />
+
+        <!-- small edit menu for duts btn -->
+        <!-- hidden by default -->
+        <div
+          class="bg-darkGrayishBlue absolute p-4 hidden rounded-lg"
+          id="edit-menu"
+        >
+          <h2>Change the name</h2>
+          <h2>Change the color</h2>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-14 hidden justify-around" id="idea-variants-btn">
+        <button
+          class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
+          id="project-btn"
+        >
+          I have a complete vision of it!
+        </button>
+        <button
+          class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
+          id="draft-btn"
+        >
+          I have some drafts!
+        </button>
+      </div>
+    </section>
+    <!-- Complited idea section -->
+    <section
+      class="project-sec relative flex px-8 hidden flex-row justify-around"
+      id="project-sec"
+    >
+      <div class="idea-desc-wrapper">
+        <div>
+          <h4 class="py-4 mr-4 inline-block">
+            Please, describe your idea as detailed as possible
+          </h4>
+          <img
+            src="./img/description.png"
+            alt="Edit your idea"
+            class="w-6 inline-block hover:scale-110 active:scale-100"
+            id="idea-desc-btn"
+          />
+          <img
+            src="./img/add (1).png"
+            alt="Add your idea"
+            class="w-6 inline-block hover:scale-110 active:scale-100"
+            id="idea-add-btn"
+          />
+          <img
+            src="./img/delete.png"
+            alt="Delete your idea"
+            class="w-6 inline-block hover:scale-110 active:scale-100"
+            id="idea-delete-btn"
+          />
+        </div>
+
+        <textarea
+          name="mainIdea"
+          id="project-idea"
+          maxlength="1000"
+          class="hidden rounded-lg pb-4 flex justify-around"
+          spellcheck="true"
+          contenteditable="true"
+        ></textarea>
+        <div class="main-idea" id="main-idea"></div>
+      </div>
+
+      <div class="textarea-wr">
+        <h4>
+          Pleas, specify the most important ideas and value of your project.
+        </h4>
+        <input
+          type="text"
+          class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
+          id="idea-items-input"
+        />
+        <button
+          class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4"
+          id="idea-items-btn"
+        >
+          Add
+        </button>
+        <div class="idea-it-area" id="idea-items-area"></div>
+      </div>
+    </section>
+    <!-- complited idea section ends -->
+
+    <!-- drafts section -->
+    <section class="bg-brightRed hidden" id="draft-sec">
+      <h1 class="w-50">drafts</h1>
+    </section>
+    <!-- drafts section ends -->
+
+    <!-- Idea section end -->
+
+    <!-- todo section -->
+    <section id="plan">
+      <div class="relative flex justify-center">
+        <span
+          class="w-1 h-12 z-10 bg-black absolute top-6 hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 hover:top-6 active:scale-100"
+          id="open-plan-sec-btn"
+        ></span>
+      </div>
+      <div class="plan-section" id="plan-section">
+        <h2 class="text-center text-4xl font-bold mt-20">Steps</h2>
+        <div class="plan-steps flex justify-center items-center flex-col">
+          <h4 class="text-center mt-10 mb-4">
+            Pleas, recite all steps that must be done as a way to achieve your
+            goal.
+          </h4>
+          <input
+            type="text"
+            class="steps-items-input hover:bg-paleYellow bg-white rounded-lg w-96 my-6"
+            id="steps-items-input"
+          />
+          <!-- buttons for steps -->
+          <div class="steps-btns flex justify-between">
             <button
-              id="menu-btn"
-              class="block hamburger md:hidden focus:outline-none"
+              class="must-do-step bg-paleBlue rounded-lg active:scale-90 py-2 px-4 w-48 my-4 mx-4"
+              id="steps-items-btn"
             >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
+              Must do
+            </button>
+            <button
+              class="should-do-step bg-paleBlue rounded-lg active:scale-90 py-2 px-4 w-48 my-4 mx-4"
+              id="steps-items-btn"
+            >
+              Should do
+            </button>
+            <button
+              class="would-do-step bg-paleBlue rounded-lg active:scale-90 py-2 px-4 w-48 my-4 mx-4"
+              id="steps-items-btn"
+            >
+              Would do
+            </button>
+            <button
+              class="ifhavetime-do-step bg-paleBlue rounded-lg active:scale-90 py-2 px-4 w-48 my-4 mx-4"
+              id="steps-items-btn"
+            >
+              If I have time
             </button>
           </div>
-          <!-- Mobile menu -->
-          <div class="md:hidden">
-            <div
-              id="menu"
-              class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-paleBlue sm:w-auto sm:self-center left-6 rounded-lg right-6 drop-shadow-md"
-            >
-              <a ref="./index.html" class="hover:text-brightRed">Home</a>
-              <a href="#idea" class="hover:text-brightRed">Your Idea</a>
-              <a href="#plan" class="hover:text-brightRed">Your Plan</a>
-              <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- Navbar end -->
 
-      <!-- Idea section -->
-      <section id="idea">
-        <div class="mx-auto my-6 flex justify-center relative">
-          <h1 class="text-4xl font-bold text-black">My project's Name</h1>
-          <span class="w-1 h-12 bg-black absolute top-10"></span>
-          <img
-            src="./img/dots.png"
-            alt="edit"
-            class="w-10 mx-4 hover:scale-125"
-            id="dots-btn"
-          />
-
-          <!-- small edit menu for duts btn -->
-          <!-- hidden by default -->
           <div
-            class="bg-darkGrayishBlue absolute p-4 hidden rounded-lg"
-            id="edit-menu"
+            class="steps-it-area w-640 justify-items-center items-center mt-10 mb-10"
+            id="steps-items-area"
           >
-            <h2>Change the name</h2>
-            <h2>Change the color</h2>
+            <span class="py-2 px-6 box-border border-2 border-black"
+              >Must do
+            </span>
+            <span class="py-2 px-6 box-border border-2 border-black"
+              >Should do</span
+            >
+            <span class="py-2 px-6 box-border border-2 border-black"
+              >Would do</span
+            >
+            <span class="py-2 px-6 box-border border-2 border-black"
+              >If i have time</span
+            >
+
+            <div id="must-do-steps" class="flex flex-col tasks-area"></div>
+            <div id="should-do-steps" class="flex flex-col tasks-area"></div>
+            <div id="would-do-steps" class="flex flex-col tasks-area"></div>
+            <div
+              id="if-have-time-do-steps"
+              class="flex flex-col tasks-area"
+            ></div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- todo section ends-->
 
-        <div class="mx-auto mt-14 flex justify-around">
-          <button
-            class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
-            id="project-btn"
-          >
-            I have a complete vision of it!
-          </button>
-          <button
-            class="text-black rounded-full bg-paleYellow px-4 py-2 mb-4 hover:bg-brightRed hover:scale-110 active:scale-100 active:bg-paleYellow"
-            id="draft-btn"
-          >
-            I have some drafts!
-          </button>
-        </div>
-      </section>
-      <!-- Complited idea section -->
-      <section
-        class="bg-paleYellow flex px-8 flex-row justify-around"
-        id="project-sec"
-      >
-        <div>
-          <h4 class="py-4">
-            Please, describe your idea as detailed as possible.
-          </h4>
-          <textarea
-            name="mainIdea"
-            id="project-idea"
-            maxlength="1000"
-            class="idea-desc rounded-lg pb-4 flex justify-around"
-            spellcheck="true"
-            contenteditable="true"
-          ></textarea>
-        </div>
+    <!-- Open idea section info -->
+    <div class="body-shadow hidden"></div>
 
-        <div class="textarea-wr">
-          <h4>
-            Pleas, specify the most important ideas and value of your project.
-          </h4>
-          <input type="text" class="hover:bg-paleGray" id="idea-items-input" />
-          <button
-            class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4"
-            id="idea-items-btn"
-          >
-            Add
-          </button>
-          <div class="idea-it-area" id="idea-items-area"></div>
-        </div>
-      </section>
-      <!-- complited idea section ends -->
+    <!-- idea-sec info -->
+    <div class="bg-white h-480 absolute hidden info-shadow" id="idea-sec-info">
+      <h2 class="text-4xl text-center py-8">
+        Hello, it is great pleasure to see you here!
+      </h2>
+      <p class="indent-5 px-4 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi
+        beatae consequatur delectus repellendus vel eum quaerat, ut odio quasi
+        incidunt alias expedita minus inventore sint. Accusantium iusto placeat
+        neque.
+      </p>
+    </div>
 
-      <!-- drafts section -->
-      <section class="bg-brightRed hidden" id="draft-sec">
-        <h1 class="w-50">drafts</h1>
-      </section>
-      <!-- drafts section ends -->
-
-      <!-- Idea section end -->
+    <!-- plan-sec info -->
+    <div class="bg-white h-480 absolute hidden info-shadow" id="plan-sec-info">
+      <h2 class="text-4xl text-center py-8">
+        So, now you better be energized, pal! Because a lot work must be done.
+      </h2>
+      <p class="indent-5 px-4 text-center">
+        In the next section you will help yourself to understand your project
+        better. You will need to Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consequuntur veniam nulla rem dolorum quisquam quia
+        explicabo, beatae saepe suscipit at temporibus commodi voluptas, ducimus
+        rerum sint laudantium? Excepturi, quae numquam.
+      </p>
     </div>
 
     <script src="./index.js"></script>

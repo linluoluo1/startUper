@@ -22,7 +22,13 @@ module.exports = {
         lightBlue: "#D2FDFF",
       },
       width: {
-        '160': '10rem,'
+        '160': '10rem,',
+        '640': '45rem',
+
+      },
+      height: {
+        '480': '30rem',
+        '640': '40rem',
       }
     },
   },

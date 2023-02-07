@@ -15,7 +15,12 @@ body {
   display: none;
 }
 
+.idea-desc-wrapper {
+  max-width: 600px;
+}
+
 .idea-desc {
+  display: flex;
   width: 500px;
   min-height: 200px;
   max-height: 500px;
@@ -31,8 +36,34 @@ body {
   top: 50%;
 }
 
+.idea-variants-btn-show {
+  display: flex;
+}
+
 .proj-name {
   justify-content: space-around;
+}
+.project-sec {
+  padding-bottom: 10px;
+  border-bottom: 3px dashed rgb(114, 114, 114);
+}
+/* .project-sec::after {
+  content: "";
+  width: 0.25rem;
+  height: 3rem;
+  position: absolute;
+  background-color: black;
+  bottom: -60px;
+}
+.project-sec:hover::after {
+  transform: scale(1.1);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+} */
+
+.project-sec:active::after {
+  transform: scale(1);
 }
 
 .textarea-wr {
@@ -41,4 +72,88 @@ body {
 
 .idea-it-area {
   max-width: inherit;
+}
+.idea-items-input:active {
+  border: none;
+  outline: none;
+}
+.idea-items-input:active:placeholder {
+  border: none;
+  outline: none;
+}
+
+.idea-item-bar {
+  display: inline-block;
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-shadow: 0px 0px 1px #c32929;
+  letter-spacing: 2px;
+}
+
+.main-idea {
+  min-width: fit-content;
+  max-width: 600px;
+  height: fit-content;
+  overflow-wrap: anywhere;
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+/* Info banners */
+
+.idea-sec-info-show {
+  width: 50%;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 300px;
+  z-index: 1000;
+}
+
+.body-shadow-active {
+  background-color: rgba(128, 128, 128, 0.382);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0px;
+  display: block;
+}
+
+/* plan section */
+.steps-it-area {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  border-bottom: 2px solid black;
+  max-height: fit-content;
+  min-height: 20rem;
+}
+
+/* plan section show */
+.plan-section-show {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.plan-sec-info-show {
+  width: 50%;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 700px;
+  z-index: 1000;
+}
+
+.tasks-area {
+  overflow-wrap: anywhere;
 }
