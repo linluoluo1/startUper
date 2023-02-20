@@ -143,6 +143,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 3px dashed rgba(114, 114, 114);
 }
 
 .plan-sec-info-show {
@@ -156,4 +157,15 @@ body {
 
 .tasks-area {
   overflow-wrap: anywhere;
+}
+
+/* Team section */
+
+.team-wrapper-show {
+  display: flex;
+}
+
+.borders {
+  margin-top: 20px;
+  border-bottom: 3px dashed rgba(114, 114, 114);
 }

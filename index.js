@@ -22,13 +22,17 @@ const planSection = document.getElementById('plan-section');
 // Plan and steps input/output
 const stepsItemsInput = document.getElementById('steps-items-input');
 const stepsItemsBtn = document.querySelectorAll("#steps-items-btn");
-// const shouldItemsBtn = document.getElementById('should-items-btn');
-// const wouldItemsBtn = document.getElementById('would-items-btn');
-// const ifHaveTimeItemsBtn = document.getElementById('if-have-time-items-btn');
 const mustDoSteps = document.getElementById('must-do-steps');
 const shouldDoSteps = document.getElementById('should-do-steps');
 const wouldDoSteps = document.getElementById('would-do-steps');
 const ifHaveTimeDoSteps = document.getElementById('if-have-time-do-steps');
+//Team 
+const teamBtn = document.getElementById('team-add-btn');
+const teamPerson = document.getElementById('team-person-name');
+const teamPost = document.getElementById('team-person-post');
+const teamBox = document.getElementById('team-box');
+const addTeamBtn = document.getElementById('add-team-btn');
+const teamWrapper = document.getElementById('team-wrapper');
 
 // Open Idea section
 openIdeaSecBtn.addEventListener('click', () => {
@@ -132,9 +136,31 @@ stepsItemsBtn.forEach((btn) => {
 // Function to return steps from input to exact output
 function returnSteps(input, output) {
     let span = document.createElement('span');
+    let list = document.createElement('select')
     span.className = "tasks-area";
-    span.style.cssText = ` padding: 8px`
+    span.style.cssText = ` padding-top: 8px; padding-bottom: 8px; display: flex; `
     span.innerHTML = input.value;
-    output.append(span)
+    output.append(span, list)
     input.value = "";
 }
+
+// Team show wrapper
+addTeamBtn.addEventListener('click', () => {
+    teamWrapper.classList.toggle('team-wrapper-show');
+    teamBox.classList.add('borders');
+})
+
+// Team add people
+teamBtn.addEventListener('click', () => {
+    let name = document.createElement('span');
+    let post = document.createElement('span');
+    name.className = 'team-name';
+    post.className = 'team-post';
+    name.style.cssText = `padding: 8px; font-weight: bold;`
+    post.style.cssText = `padding: 8px; font-weight: bold; color: blue;`
+    name.innerHTML = `${teamPerson.value}` + " ";
+    post.innerHTML = `${teamPost.value} `
+    teamBox.append(name, post)
+    teamPerson.value = "";
+    teamPost.value = "";
+})

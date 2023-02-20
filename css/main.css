@@ -561,8 +561,8 @@ video {
   top: 2.5rem;
 }
 
-.top-6 {
-  top: 1.5rem;
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-10 {
@@ -638,8 +638,12 @@ video {
   margin-right: 1rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .box-border {
@@ -658,6 +662,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -670,8 +678,8 @@ video {
   height: 2rem;
 }
 
-.h-96 {
-  height: 24rem;
+.h-640 {
+  height: 40rem;
 }
 
 .h-480 {
@@ -718,6 +726,10 @@ video {
   width: 45rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -732,6 +744,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -863,17 +879,17 @@ video {
 
 .bg-darkGrayishBlue {
   --tw-bg-opacity: 1;
-  background-color: rgb(48 60 108 / var(--tw-bg-opacity));
-}
-
-.bg-paleYellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 246 186 / var(--tw-bg-opacity));
+  background-color: rgb(108 133 244 / var(--tw-bg-opacity));
 }
 
 .bg-brightRed {
   --tw-bg-opacity: 1;
   background-color: rgb(244 151 108 / var(--tw-bg-opacity));
+}
+
+.bg-paleRed {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 209 251 / var(--tw-bg-opacity));
 }
 
 .bg-paleGray {
@@ -993,6 +1009,11 @@ video {
   line-height: 1;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1090,8 +1111,8 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.hover\:top-6:hover {
-  top: 1.5rem;
+.hover\:top-2:hover {
+  top: 0.5rem;
 }
 
 .hover\:h-8:hover {
@@ -1127,11 +1148,6 @@ body {
   background-color: rgb(244 151 108 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-paleYellow:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 246 186 / var(--tw-bg-opacity));
-}
-
 .hover\:text-brightRed:hover {
   --tw-text-opacity: 1;
   color: rgb(244 151 108 / var(--tw-text-opacity));
@@ -1152,11 +1168,6 @@ body {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.active\:bg-paleYellow:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 246 186 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 480px) {

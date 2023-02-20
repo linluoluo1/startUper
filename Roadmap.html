@@ -28,6 +28,11 @@
             <a href="./index.html" class="hover:text-brightRed">Home</a>
             <a href="#idea" class="hover:text-brightRed">Your Idea</a>
             <a href="#plan" class="hover:text-brightRed">Your plan</a>
+            <a href="#team" class="hover:text-brightRed">Your team</a>
+            <a href="#timing" class="hover:text-brightRed">Your timing</a>
+            <a href="#achievements" class="hover:text-brightRed"
+              >Your achievements</a
+            >
             <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
           </div>
 
@@ -175,18 +180,18 @@
     <!-- Idea section end -->
 
     <!-- todo section -->
-    <section id="plan">
+    <section id="plan ">
+      <h2 class="text-center text-4xl font-bold mt-4">Steps</h2>
       <div class="relative flex justify-center">
         <span
-          class="w-1 h-12 z-10 bg-black absolute top-6 hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 hover:top-6 active:scale-100"
+          class="w-1 h-12 z-10 bg-black absolute top-2 hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 hover:top-2 active:scale-100"
           id="open-plan-sec-btn"
         ></span>
       </div>
-      <div class="plan-section" id="plan-section">
-        <h2 class="text-center text-4xl font-bold mt-20">Steps</h2>
+      <div class="plan-section hidden mt-4" id="plan-section">
         <div class="plan-steps flex justify-center items-center flex-col">
           <h4 class="text-center mt-10 mb-4">
-            Pleas, recite all steps that must be done as a way to achieve your
+            Please, recite all steps that must be done as a way to achieve your
             goal.
           </h4>
           <input
@@ -251,6 +256,71 @@
       </div>
     </section>
     <!-- todo section ends-->
+
+    <!-- Team section -->
+    <section id="team">
+      <div class="w-screen h-640 bg-paleYellow">
+        <h2 class="text-4xl mt-4 text-center">My Team</h2>
+        <div class="flex justify-center relative">
+          <span
+            class="w-1 h-12 z-10 flex bg-black absolute hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 active:scale-100"
+            id="open-plan-sec-btn"
+          ></span>
+        </div>
+
+        <div class="team-section mt-16 text-center">
+          <h4 class="text-2xl">
+            Add your team
+            <img
+              src="./img/add (1).png"
+              alt="Add your team-member"
+              class="w-6 inline-block hover:scale-110 active:scale-100"
+              id="add-team-btn"
+            />
+          </h4>
+          <div
+            class="justify-center items-center flex-col hidden"
+            id="team-wrapper"
+          >
+            <label for="team-person-name">Your colleague's name</label>
+            <input
+              type="text"
+              class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
+              id="team-person-name"
+            />
+
+            <label for="team-person-post">Your colleague's post</label>
+            <input
+              type="text"
+              class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
+              id="team-person-post"
+            />
+
+            <button
+              class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4 my-4"
+              id="team-add-btn"
+            >
+              Add
+            </button>
+          </div>
+          <!-- Colleagues box -->
+          <div class="grid grid-cols-2" id="team-box"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Team section ends -->
+
+    <!-- Timing section -->
+    <section id="timing" class="w-640 h-640 bg-paleGray"></section>
+    <!-- Timing section ends -->
+
+    <!-- Achievements section -->
+    <section id="achievements" class="w-640 h-640 bg-paleYellow"></section>
+    <!-- Achievements section ends -->
+
+    <!-- Unicity section -->
+    <section id="Unicity" class="w-640 h-640 bg-paleGray"></section>
+    <!-- Unicity section ends -->
 
     <!-- Open idea section info -->
     <div class="body-shadow hidden"></div>

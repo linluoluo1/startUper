@@ -13,8 +13,8 @@ module.exports = {
       colors: {
         brightRed: "#F4976C",
         brightRedbg: "rgba(244,151,108, 0.9)",
-        darkGrayishBlue: "#303C6C",
-        paleYellow: "#fff6ba",
+        darkGrayishBlue: "#6c85f4",
+        paleRed: "#c7d1fb",
         paleYellowbg: "rgba(251,	232,	166, 0.9)",
         paleGray: "hsl(249,28%,90%)",
         paleBlue: "#B4DFE5",
