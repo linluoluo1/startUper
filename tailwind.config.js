@@ -2,6 +2,7 @@
 module.exports = {
   content: ['./*.html'],
 
+
   theme: {
     screens: {
       sm: "480px",
@@ -11,15 +12,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        brightRed: "#F4976C",
+        brightRed: "#71a856",
         brightRedbg: "rgba(244,151,108, 0.9)",
-        darkGrayishBlue: "#6c85f4",
+        darkGrayishBlue: "#89a9eb",
         paleRed: "#c7d1fb",
         paleYellowbg: "rgba(251,	232,	166, 0.9)",
         paleGray: "hsl(249,28%,90%)",
         paleBlue: "#B4DFE5",
         paleBluebg: "rgba(180,	223,	229, 0.5)",
-        lightBlue: "#D2FDFF",
+        lightBlue: "#aeb6c6",
       },
       width: {
         '160': '10rem,',

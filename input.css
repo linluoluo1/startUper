@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-image: url(../img/bg-8.jfif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -webkit-linear-gradient(90deg, #aeb6c6, #faf4ec, #d7cebf);
+  background: linear-gradient(90deg, #aeb6c6, #faf4ec, #d7cebf);
   font-family: "Montserrat", sans-serif;
   color: black;
   font-size: 20px;

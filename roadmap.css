@@ -1,10 +1,9 @@
 body {
-  background-image: url(../img/bg-8.jfif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -webkit-linear-gradient(90deg, #aeb6c6, #faf4ec, #d7cebf);
+  background: linear-gradient(90deg, #aeb6c6, #faf4ec, #d7cebf);
   font-family: "Montserrat", sans-serif;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .section-visibility {
@@ -114,6 +113,8 @@ body {
   left: 25%;
   top: 300px;
   z-index: 1000;
+  background-color: white;
+  height: 30rem;
 }
 
 .body-shadow-active {

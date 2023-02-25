@@ -66,16 +66,17 @@
     <section id="hero">
       <!-- Flex Container -->
       <div
-        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+        class="container flex flex-col-reverse md:flex-row items-center px-10 mx-auto my-20 space-y-0 md:space-y-0"
       >
         <!-- LeftItem -->
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1
-            class="h1 max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+            class="h1 max-w-md text-5xl font-bold text-center md:text-5xl md:text-left max-[480px]:text-4xl"
           >
-            Bring everyone together to build better world!
+            
+            <span class="text-brightRed text-6xl ">S</span>implify today how you are going to change tomorrow.
           </h1>
-          <p class="max-w-sm text-center md:text-left">
+          <p class="max-w-sm text-center md:text-left indent-8">
             Lets develop new technologies and services to make the world more
             sustainable.We are more than just a company, we are family.
           </p>
@@ -101,14 +102,16 @@
       <!-- Flex container -->
       <div
         id="about-us"
-        class="container flex flex-col px-4 mx-auto mt-10 mb-10 space-y-12 md:space-y-0 md:flex-row"
+        class="container flex flex-col px-10 mx-auto mb-20 space-y-12 md:space-y-0 md:flex-row"
       >
         <!-- Difference -->
         <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-            What is different about StartUper?
+          <h2 class="max-w-md text-5xl font-bold text-center md:text-left max-[480px]:text-4xl">
+            <span class="text-brightRed text-6xl">W</span>hat is different about
+            StartUper?
           </h2>
-          <p class="max-w-sm text-center md:text-left">
+
+          <p class="max-w-sm text-center md:text-left indent-8">
             Know and predict what a customer needs through research. Build
             product marketing objectives and strategies. Create product lines
             and test ideas for market viability. Determine a product pricing
@@ -126,7 +129,7 @@
             <div class="rounded-l-full bg-brightRed md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div
-                  class="px-4 py-2 text-black rounded-full md:py-1 bg-brightRed"
+                  class="px-4 text-black rounded-full md:py-1 bg-brightRed"
                 >
                   01
                 </div>
@@ -139,7 +142,7 @@
               <h3 class="hidden mb-4 text-lg font-bold md:block">
                 Plan Company Wide Progress
               </h3>
-              <p class="color-darkGrayishBlue">
+              <p class="color-darkGrayishBlue indent-8">
                 Planning is key to any business throughout its existence. Every
                 successful business regularly reviews its business plan to
                 ensure it continues to meet its needs. It's sensible to review
@@ -171,7 +174,7 @@
               <h3 class="hidden mb-4 text-lg font-bold md:block">
                 Check the timing
               </h3>
-              <p class="color-darkGrayishBlue">
+              <p class="color-darkGrayishBlue indent-8">
                 Timing can be defined as launching the product or service at the
                 right time in the right place. If your startup arrives too
                 early, you may not get the expected traction. If it enters the
@@ -203,7 +206,7 @@
               <h3 class="hidden mb-4 text-lg font-bold md:block">
                 Raise your idea
               </h3>
-              <p class="color-darkGrayishBlue">
+              <p class="color-darkGrayishBlue indent-8">
                 A business idea is a beginning point for a budding entrepreneur.
                 It is important as it is the starting of a new life. A business
                 idea is important solely in the early stage of a startup. If the
@@ -220,15 +223,17 @@
     <!-- Product -->
     <section id="product">
       <!--Container with headings and List of some items and link to the product page -->
-      <div class="products text-center bg-paleRed mx-auto flex flex-col">
-        <h2 class="my-6 font-bold text-5xl">We will do it for you</h2>
+      <div class="products text-center mx-auto flex flex-col mb-20 px-10">
+        <h2 class="mb-8 font-bold text-5xl max-[480px]:text-4xl max-[480px]:my-4">
+          <span class="text-brightRed text-6xl">W</span>e will do it for you
+        </h2>
         <!-- List -->
-        <div class="flex py-4 products-list flex justify-around" <!-- Item1 -->
-          <div class="w-44 flex flex-col items-center">
-            <h3 class="mb-4 font-bold border-b-2 border-black text-4xl">
-              Planning
+        <div class="flex py-4 products-list flex max-[480px]:flex-col justify-around max-[480px]:items-center"> <!-- Item1 -->
+          <div class="w-44 flex flex-col items-center ">
+            <h3 class="mb-4 font-bold border-b-2 border-brightRed text-4xl max-[480px]:text-2xl max-[480px]:my-4">
+             <span class="text-brightRed ">&#149</span> Planning
             </h3>
-            <img src="./img/plan.png" alt="plan" class="w-15 my-6" />
+            <img src="./img/plan.png" alt="plan" class="w-15 " />
             <p class="product-text">
               Help you with you plan. We respect your ideas and we will adopt
               your idea to real world and improve it with your vision.
@@ -236,11 +241,11 @@
           </div>
           <!-- Item2-->
           <div class="w-44 flex flex-col items-center">
-            <h3 class="mb-4 font-bold border-b-2 border-black text-4xl">
-              Funding
+            <h3 class="mb-4 font-bold border-b-2 border-brightRed text-4xl max-[480px]:text-2xl max-[480px]:my-4">
+            <span class="text-brightRed ">&#149</span>  Funding
             </h3>
 
-            <img src="./img/funding.png" alt="plan" class="w-15 my-6" />
+            <img src="./img/funding.png" alt="plan" class="w-15 " />
             <p class="product-text">
               We will find the best investors for your project,who will share
               your values and and would be interested in your product.
@@ -249,10 +254,10 @@
 
           <!-- Item3 -->
           <div class="w-44 flex flex-col items-center">
-            <h3 class="mb-4 font-bold border-b-2 border-black text-4xl">
-              Team
+            <h3 class="mb-4 font-bold border-b-2 border-brightRed text-4xl max-[480px]:text-2xl max-[480px]:my-4">
+            <span class="text-brightRed ">&#149</span>  Team
             </h3>
-            <img src="./img/united.png" alt="plan" class="w-15 my-6" />
+            <img src="./img/united.png" alt="plan" class="w-15 " />
             <p class="product-text">
               Help you to build great team. We went through a lot of projects
               and we have a great understanding what it takes to achieve the
@@ -262,7 +267,7 @@
         </div>
         <a href="#">
           <button
-            class="bg-darkGrayishBlue text-white py-2 mb-4 px-4 rounded-full hover:bg-brightRed"
+            class="bg-darkGrayishBlue text-white py-2 px-4 rounded-full hover:bg-brightRed"
           >
             What else
           </button>
@@ -272,17 +277,18 @@
     <!-- Testimonials -->
     <section id="testimonials">
       <!-- Container for heading and blogs  -->
-      <div class="max-w-6xl px-5 mx-auto mt-28 text-center">
+      <div class="max-w-6xl px-10 mx-auto mb-20 text-center">
         <!-- HEading -->
-        <h2 class="text-5xl font-bold text-center">StartUper community</h2>
+        <h2 class="text-5xl font-bold text-center max-[480px]:text-4xl">
+          <span class="text-brightRed text-6xl">S</span>tartUper community</h2>
         <!-- Testimonials container -->
         <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
           <!-- Testimonial 1 -->
           <div
-            class="feedback flex flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:w-1/3"
+            class="feedback flex flex-col items-center p-6 space-y-6 rounded-lg  md:w-1/3"
           >
             <img
-              src="img/AuthorPhoto.png"
+              src="img/woman.png"
               class="w-16 -mt-14"
               alt="AuthorPhoto"
             />
@@ -294,10 +300,10 @@
           </div>
           <!-- Testimonial 2 -->
           <div
-            class="feedback hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:flex md:w-1/3"
+            class="feedback hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3"
           >
             <img
-              src="img/AuthorPhoto.png"
+              src="img/space-suit.png"
               class="w-16 -mt-14"
               alt="AuthorPhoto"
             />
@@ -309,10 +315,10 @@
           </div>
           <!-- Testimonial  -->
           <div
-            class="feedback hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:flex md:w-1/3"
+            class="feedback hidden flex-col items-center p-6 space-y-6 rounded-lg  md:flex md:w-1/3"
           >
             <img
-              src="img/AuthorPhoto.png"
+              src="img/man.png"
               class="w-16 -mt-14"
               alt="AuthorPhoto"
             />
@@ -324,7 +330,7 @@
           </div>
         </div>
         <!-- Button -->
-        <div class="my-16">
+        <div class="mt-4">
           <a
             href="#"
             class="p-3 px-6 pt-2 bg-darkGrayishBlue text-white rounded-full baseline hover:bg-brightRed"
@@ -335,25 +341,26 @@
     </section>
 
     <!-- Inspiration Section -->
-    <section id="inspiration" class="bg-paleRed">
+    <section id="inspiration">
       <!-- Flex Container -->
       <div
-        class="inspiration container flex flex-col items-center justify-between px-6 py-24 mx-auto spacy-y-12 md:py-12 md:space-y-0"
+        class="inspiration container flex flex-col items-center justify-between px-10  mb-20 mx-auto spacy-y-12  md:space-y-0"
       >
         <h2
-          class="mb-6 text-5xl font-bold leading-tight text-center md:text-4xl w-4xl"
+          class="mb-6 text-5xl font-bold leading-tight text-center max-[480px]:text-4xl w-4xl"
         >
-          Simplify today how you are going to change tomorrow.
+          <span class="text-brightRed text-6xl">B</span>ring everyone together
+            to build better world!
         </h2>
-        <div class="flex py-10">
-          <p class="inspiration-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-            eveniet voluptate. Corrupti sunt saepe laborum repudiandae error?
+        <div class="flex flex-col py-10 items-center ">
+          <p class="inspiration-text text-left indent-8" >
+            <span>&#149</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+            eveniet voluptate. Corrupti  saepe laborum repudiandae error?
             Impedit, magnam optio? Sapiente deleniti recusandae assumenda, fugit
-            id eius natus perspiciatis.
+            id eius natus perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ex, delectus, doloremque laboriosam aliquam odit quis ipsam rerum quo sequi repudiandae reiciendis inventore cumque quae.
           </p>
-          <p class="inspiration-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          <p class="inspiration-text text-left indent-8 ">
+           <span>&#149</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             delectus sapiente maxime. Magni ad sunt sit iure provident ex
             repudiandae, reiciendis, eum consequuntur hic eveniet voluptatem
             fugit veniam, perspiciatis recusandae!
@@ -413,7 +420,7 @@
     <!-- Login form end -->
 
     <!-- Footer -->
-    <footer class="bg-paleGray">
+    <footer class="bg-white">
       <!-- Flex-container -->
       <div
         class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
@@ -475,7 +482,7 @@
             <div class="flex space-x-3">
               <input
                 type="text"
-                class="bg-white placeholder-black text-black flex-1 px-4 rounded-full focus:outline-none"
+                class="bg-lightBlue placeholder-black text-black flex-1 px-4 rounded-full focus:outline-none"
                 placeholder="Updates in your inbox"
               />
               <button
