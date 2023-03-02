@@ -21,19 +21,17 @@
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="pt-2">
-            <img src="img/logo.png" alt="logo" />
+            <a href="./index.html">
+              <img src="img/logo.png" class="w-44" alt="logo"
+            /></a>
           </div>
           <!-- Menu Items -->
           <div class="hidden md:flex space-x-12">
-            <a href="./index.html" class="hover:text-brightRed">Home</a>
-            <a href="#idea" class="hover:text-brightRed">Your Idea</a>
-            <a href="#plan" class="hover:text-brightRed">Your plan</a>
-            <a href="#team" class="hover:text-brightRed">Your team</a>
-            <a href="#timing" class="hover:text-brightRed">Your timing</a>
-            <a href="#achievements" class="hover:text-brightRed"
-              >Your achievements</a
-            >
-            <a href="#roadmap" class="hover:text-brightRed">Roadmap</a>
+            <a href="#idea" class="hover:text-brightRed">Idea</a>
+            <a href="#team" class="hover:text-brightRed">Team</a>
+            <a href="#plan" class="hover:text-brightRed">Plan</a>
+            <a href="#timing" class="hover:text-brightRed">Timing</a>
+            <a href="#achievements" class="hover:text-brightRed">Gains</a>
           </div>
 
           <!-- Button -->
@@ -159,6 +157,8 @@
             type="text"
             class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
             id="idea-items-input"
+            autocomplete="off"
+            placeholder="Main ideas"
           />
           <button
             class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4"
@@ -176,18 +176,129 @@
         <h1 class="w-50">drafts</h1>
       </section>
       <!-- drafts section ends -->
+
+      <!-- idea-sec info -->
+      <div
+        class="bg-white h-480 absolute hidden info-shadow"
+        id="idea-sec-info"
+      >
+        <h2 class="text-4xl text-center py-8">
+          Hello, it is great pleasure to see you here!
+        </h2>
+        <p class="indent-5 px-4 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi
+          beatae consequatur delectus repellendus vel eum quaerat, ut odio quasi
+          incidunt alias expedita minus inventore sint. Accusantium iusto
+          placeat neque.
+        </p>
+      </div>
+      <!-- idea-section-info-banner-ends  -->
     </section>
     <!-- Idea section end -->
 
+    <!-- Team section -->
+    <section id="team" class="hidden mb-10">
+      <div class="w-screen h-80">
+        <h2 class="text-4xl mt-4 text-center">My Team</h2>
+        <div class="flex justify-center relative">
+          <span
+            class="w-1 h-12 z-10 flex bg-black absolute hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 active:scale-100"
+            id="open-team-sec-btn"
+          ></span>
+        </div>
+
+        <div
+          class="team-section mt-16 text-center hidden relative"
+          id="team-edit-section"
+        >
+          <h4 class="text-2xl mb-4">
+            Add your team
+            <img
+              src="./img/add (1).png"
+              alt="Add your team-member"
+              class="w-6 inline-block hover:scale-110 active:scale-100"
+              id="add-team-btn"
+            />
+          </h4>
+          <div
+            class="justify-center items-center flex-col hidden"
+            id="team-wrapper"
+          >
+            <label for="team-person-name">Your colleague's name</label>
+            <input
+              type="text"
+              class="team-items-input hover:bg-paleYellow bg-white rounded-lg my-2"
+              id="team-person-name"
+              autocomplete="off"
+              placeholder="Name"
+            />
+
+            <label for="team-person-post">Your colleague's post</label>
+            <input
+              type="text"
+              class="team-items-input hover:bg-paleYellow bg-white rounded-lg my-2"
+              id="team-person-post"
+              autocomplete="off"
+              placeholder="Post"
+            />
+
+            <button
+              class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4 my-4"
+              id="team-add-btn"
+            >
+              Add
+            </button>
+          </div>
+          <!-- Colleagues box -->
+          <div class="grid grid-cols-2 mb-10 m" id="team-box"></div>
+        </div>
+      </div>
+
+      <!-- team-sec info -->
+      <div
+        class="bg-white h-480 absolute hidden info-shadow"
+        id="team-banner-info"
+      >
+        <h2 class="text-4xl text-center py-8">
+          Would you like to introduce your team?
+        </h2>
+        <p class="indent-5 px-4 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi
+          beatae consequatur delectus repellendus vel eum quaerat, ut odio quasi
+          incidunt alias expedita minus inventore sint. Accusantium iusto
+          placeat neque.
+        </p>
+      </div>
+      <!-- team-section-info-banner-ends  -->
+    </section>
+    <!-- Team section ends -->
+
     <!-- todo section -->
-    <section id="plan ">
-      <h2 class="text-center text-4xl font-bold mt-4 hidden">Steps</h2>
+    <section id="plan" class="hidden">
+      <h2 class="text-center text-4xl font-bold mt-10">Steps</h2>
       <div class="relative flex justify-center">
         <span
           class="w-1 h-12 z-10 bg-black absolute top-2 hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 hover:top-2 active:scale-100"
           id="open-plan-sec-btn"
         ></span>
       </div>
+      <!-- plan-sec info-banner -->
+      <div
+        class="bg-white h-480 absolute hidden info-shadow"
+        id="plan-sec-info"
+      >
+        <h2 class="text-4xl text-center py-8">
+          So, now you better be energized, pal! Because a lot work must be done.
+        </h2>
+        <p class="indent-5 px-4 text-center">
+          In the next section you will help yourself to understand your project
+          better. You will need to Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Consequuntur veniam nulla rem dolorum quisquam quia
+          explicabo, beatae saepe suscipit at temporibus commodi voluptas,
+          ducimus rerum sint laudantium? Excepturi, quae numquam.
+        </p>
+      </div>
+      <!-- plan-sec-info-banner-ends -->
       <div class="plan-section hidden mt-4" id="plan-section">
         <div class="plan-steps flex justify-center items-center flex-col">
           <h4 class="text-center mt-10 mb-4">
@@ -257,59 +368,6 @@
     </section>
     <!-- todo section ends-->
 
-    <!-- Team section -->
-    <section id="team">
-      <div class="w-screen h-640 bg-paleYellow hidden">
-        <h2 class="text-4xl mt-4 text-center">My Team</h2>
-        <div class="flex justify-center relative">
-          <span
-            class="w-1 h-12 z-10 flex bg-black absolute hover:scale-110 hover:rounded-full hover:h-9 hover:w-8 active:scale-100"
-            id="open-plan-sec-btn"
-          ></span>
-        </div>
-
-        <div class="team-section mt-16 text-center">
-          <h4 class="text-2xl">
-            Add your team
-            <img
-              src="./img/add (1).png"
-              alt="Add your team-member"
-              class="w-6 inline-block hover:scale-110 active:scale-100"
-              id="add-team-btn"
-            />
-          </h4>
-          <div
-            class="justify-center items-center flex-col hidden"
-            id="team-wrapper"
-          >
-            <label for="team-person-name">Your colleague's name</label>
-            <input
-              type="text"
-              class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
-              id="team-person-name"
-            />
-
-            <label for="team-person-post">Your colleague's post</label>
-            <input
-              type="text"
-              class="idea-items-input hover:bg-paleYellow bg-white rounded-lg"
-              id="team-person-post"
-            />
-
-            <button
-              class="bg-paleBlue rounded-lg active:scale-90 py-2 px-4 my-4"
-              id="team-add-btn"
-            >
-              Add
-            </button>
-          </div>
-          <!-- Colleagues box -->
-          <div class="grid grid-cols-2" id="team-box"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Team section ends -->
-
     <!-- Timing section -->
     <section id="timing" class="w-640 h-640 bg-white hidden"></section>
     <!-- Timing section ends -->
@@ -322,45 +380,12 @@
     <section id="Unicity" class="w-640 h-640 bg-blue hidden"></section>
     <!-- Unicity section ends -->
 
-    <!-- Open idea section info -->
+    <!-- Open idea section info shadow -->
     <div class="body-shadow hidden"></div>
 
-    <!-- idea-sec info -->
-    <div class="bg-white h-480 absolute hidden info-shadow" id="idea-sec-info">
-      <h2 class="text-4xl text-center py-8">
-        Hello, it is great pleasure to see you here!
-      </h2>
-      <p class="indent-5 px-4 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem animi
-        beatae consequatur delectus repellendus vel eum quaerat, ut odio quasi
-        incidunt alias expedita minus inventore sint. Accusantium iusto placeat
-        neque.
-      </p>
-    </div>
-
-    <!-- plan-sec info -->
-    <div class="bg-white h-480 absolute hidden info-shadow" id="plan-sec-info">
-      <h2 class="text-4xl text-center py-8">
-        So, now you better be energized, pal! Because a lot work must be done.
-      </h2>
-      <p class="indent-5 px-4 text-center">
-        In the next section you will help yourself to understand your project
-        better. You will need to Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Consequuntur veniam nulla rem dolorum quisquam quia
-        explicabo, beatae saepe suscipit at temporibus commodi voluptas, ducimus
-        rerum sint laudantium? Excepturi, quae numquam.
-      </p>
-    </div>
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-
     <script src="./index.js"></script>
+    <script src="./idea.js"></script>
     <script src="./plan.js"></script>
+    <script src="./team.js"></script>
   </body>
 </html>

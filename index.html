@@ -33,7 +33,7 @@
           <!-- Button -->
           <a
             href="#"
-            class="hidden md:block p-3 text-white px-6 pt-2 bg-darkGrayishBlue rounded-full baseline hover:bg-brightRed"
+            class="hidden md:block btn-common"
             >Get Started</a
           >
 
@@ -51,7 +51,7 @@
         <div class="md:hidden">
           <div
             id="menu"
-            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-paleYellow sm:w-auto sm:self-center left-6 rounded-lg right-6 drop-shadow-md"
+            class="absolute flex-col items-center self-end bg-brightRed hidden py-8 mt-10 space-y-6 font-bold bg-paleYellow sm:w-auto sm:self-center left-6 rounded-lg right-6 drop-shadow-md"
           >
             <a ref="./Roadmap.html" class="hover:text-brightRed">Roadmap</a>
             <a href="#about-us" class="hover:text-brightRed">About us</a>
@@ -117,7 +117,16 @@
             and test ideas for market viability. Determine a product pricing
             strategy based on production costs, market demand and research.
           </p>
+
+            <!-- Button -->
+        
+          <button
+            class="btn-common max-[768px]:mx-auto"
+            >Get Started</button
+          >
         </div>
+
+        
 
         <!-- Numbere List -->
         <div class="flex flex-col space-y-8 md:w-1/2">
@@ -267,7 +276,7 @@
         </div>
         <a href="#">
           <button
-            class="bg-darkGrayishBlue text-white py-2 px-4 rounded-full hover:bg-brightRed"
+            class="btn-common"
           >
             What else
           </button>
@@ -329,14 +338,7 @@
             </p>
           </div>
         </div>
-        <!-- Button -->
-        <div class="mt-4">
-          <a
-            href="#"
-            class="p-3 px-6 pt-2 bg-darkGrayishBlue text-white rounded-full baseline hover:bg-brightRed"
-            >Get Started</a
-          >
-        </div>
+      
       </div>
     </section>
 
@@ -367,13 +369,13 @@
           </p>
         </div>
 
-        <div>
-          <a
+        
+          <button
             href="#"
-            class="p-3 px-6 bg-darkGrayishBlue text-white rounded-full baseline shadow-2xl hover:bg-brightRed"
-            >Get Started</a
+            class="btn-common"
+            >Get Started</button
           >
-        </div>
+   
       </div>
     </section>
 
@@ -479,14 +481,14 @@
         <!-- Input container -->
         <div class="flex flex-col justify-between">
           <form>
-            <div class="flex space-x-3">
+            <div class="flex flex-col space-y-3 items-center">
               <input
                 type="text"
                 class="bg-lightBlue placeholder-black text-black flex-1 px-4 rounded-full focus:outline-none"
                 placeholder="Updates in your inbox"
               />
               <button
-                class="px-6 py-2 text-black rounded-full bg-darkGrayishBlue text-white hover:bg-brightRed focus:outline-none"
+                class="btn-common"
               >
                 Go
               </button>

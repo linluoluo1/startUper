@@ -14,7 +14,7 @@ module.exports = {
       colors: {
         brightRed: "#71a856",
         brightRedbg: "rgba(244,151,108, 0.9)",
-        darkGrayishBlue: "#89a9eb",
+        darkGrayishBlue: "#7d77aa",
         paleRed: "#c7d1fb",
         paleYellowbg: "rgba(251,	232,	166, 0.9)",
         paleGray: "hsl(249,28%,90%)",

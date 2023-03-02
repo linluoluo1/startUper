@@ -55,3 +55,22 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+.btn-common {
+  background-color: #7d77aa;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  width: 9rem;
+  text-align: center;
+}
+
+.btn-common:hover {
+  transform: scale(1.1);
+  background-color: #71a856;
+}
+
+.btn-common:active {
+  transform: scale(1);
+  background-color: #7d77aa;
+}

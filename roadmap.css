@@ -72,6 +72,9 @@ body {
 .idea-it-area {
   max-width: inherit;
 }
+.idea-items-input::placeholder {
+  padding-left: 1rem;
+}
 .idea-items-input:active {
   border: none;
   outline: none;
@@ -128,6 +131,11 @@ body {
 }
 
 /* plan section */
+/* plan section show */
+.plan-section-show-heading {
+  display: block;
+  margin-top: 4rem;
+}
 .steps-it-area {
   display: grid;
   grid-template-rows: 50px 1fr;
@@ -152,7 +160,7 @@ body {
   display: block;
   position: absolute;
   left: 25%;
-  top: 700px;
+  top: 150px;
   z-index: 1000;
 }
 
@@ -162,6 +170,17 @@ body {
 
 /* Team section */
 
+/* team-whole-section-show */
+
+.team-section-show {
+  display: block;
+}
+
+.team-section-open {
+  display: block;
+  height: max-content;
+}
+
 .team-wrapper-show {
   display: flex;
 }
@@ -169,4 +188,21 @@ body {
 .borders {
   margin-top: 20px;
   border-bottom: 3px dashed rgba(114, 114, 114);
+}
+
+/* Team info banner */
+
+.team-info-banner {
+  width: 50%;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 450px;
+  z-index: 1000;
+  background-color: white;
+  height: 30rem;
+}
+
+.team-items-input::placeholder {
+  padding-left: 1rem;
 }
